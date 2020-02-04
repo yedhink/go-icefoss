@@ -3,5 +3,6 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println("1+2 = ",1+2," hi")
+	var x,y = "yedhio", 3
+	fmt.Println("1+2 = ",y, " hi ",x)
 }
