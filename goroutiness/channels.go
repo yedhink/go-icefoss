@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func double(ip,op chan int){
-	for true {
+	for {
 		num := <-ip
 		op <- num * 2
 	}
