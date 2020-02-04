@@ -10,10 +10,20 @@ import (
 func main() {
 	// is this implicit or explicit
 	var args = os.Args
-	// the open brace should be on same line
-	// :=  is implicit declaration
-	// os.Args is a slice of strigs or a list of strings
-	for i:=1; i < len(args);i++ {
+	i:=1
+	for i < len(args) {
 		fmt.Print(args[i],"  ")
+		i++
+	}
+
+	// infinite loop without if condtion
+	i--
+	for {
+		fmt.Print(args[i],"  ")
+		i--
+		if i<1{
+			break
+		}
 	}
 }
+
