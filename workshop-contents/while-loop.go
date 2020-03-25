@@ -21,9 +21,8 @@ func main() {
 	for {
 		fmt.Print(args[i],"  ")
 		i--
-		if i<1{
+		if i<1 {
 			break
 		}
 	}
 }
-
