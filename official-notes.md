@@ -96,3 +96,29 @@ var arr [5]int;
 ```
 * they don't have a fixed length, rather they can grow in size
 * using make we can create dynamically sized arrays :- `make([]int,len,cap)`
+
+# Methods
+* methods are a form of function where there exists a special receiver argument btw func() and the name of the function
+```go 
+type Vertex struct{
+	X,Y int
+}
+
+func (receiver Vertex) Sum(arg int) int {
+	return receiver.X + receiver.Y - arg
+}
+```
+
+# interface
+* these are types which essentially makes use of a method signature
+### empty interface - similar to templates
+* they can take in any values
+```go
+func main() {
+ var i interface{}
+ i = 42 // now its a int
+ i = "hi" // now its a string
+}
+```
+### type assertion
+`t := interface{}.(T)` asserts that the interface value is of type T
