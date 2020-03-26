@@ -24,5 +24,5 @@ func main() {
 	n=1
 	ourValue := []int{13}
 	copySlice = append(copySlice[:n],append(ourValue,copySlice[n:]...)...)
-	fmt.Println("copySlice \t: ",copySlice)
+	fmt.Println("copySlie \t: ",copySlice)
 }
